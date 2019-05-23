@@ -1,0 +1,69 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="style1.css">
+<div class="container">
+	<div class="main">
+		<div class="main-center">
+		
+			<form class=""  action="get_form2.php" method="get">
+             <p>
+                <label>Full name* </label>
+                <input class="input100" type="text" name="fullname" placeholder="Enter your name">
+             </p>
+             <p>
+                <label>Password* </label>
+                <input class="input100" type="password" name="pass" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+             </p>
+             <p>
+                <label>Enter your email </label>
+                <input class="input100" type="text" name="email" placeholder="Enter your email">
+             </p>
+             <p>
+                <label>Your Website</label>
+                <input class="input100" type="text" name="web" placeholder="http://yourWebsite.com">
+             </p>
+             <p>
+                 <label>Phone *</label>
+                 <input class="input100" type="text" name="phone" placeholder="Enter your Phone">
+             </p>
+             <p>
+                 <label>Coffee *</label>
+                 <input type="number" type="number" name="coffee" value="5" min="0" max="10">
+             </p>
+             <p>
+                 <label>Address </label>
+                 <input class="input100" type="text" name="address" placeholder="Enter your address">
+             </p>
+                
+                <p>what is the temperature 
+                    <input type="range" name="temper" value="5" min="0"
+                    max="100">
+                 </p>
+                     Age 
+                     <input type="number" name="age" value="35" min="22" max="67" >
+                   
+                        <p>
+                             <label>Gender:</label>
+                             <input   type="radio" name="gender" value="male" checked>male
+                             <input   type="radio" name="gender" value="famale">famale
+                             <input  type="radio" name="gender" value="other">other
+                        </p>
+                            <p>
+                                    <label>what is your hobbies:</label>
+                                    <select class="input100" name="interests[]" multiple>
+                                        <option selected>Choose</option>
+                                        <option value="1">Racing</option>
+                                        <option value="2">Sport</option>
+                                        <option value="3">Coding</option>
+                                    </select>
+                                </p>
+				<button type="submit">SUBMIT</button>
+						
+					</form>
+				</div>
+			</div>
+		</div>
